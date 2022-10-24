@@ -1,0 +1,19 @@
+Oct 24, 2022 7:33:15 AM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: staging
+Oct 24, 2022 7:33:15 AM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3063.v26e24490f041
+Oct 24, 2022 7:33:15 AM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using /home/ec2-user/jenkins/remoting as a remoting work directory
+Oct 24, 2022 7:33:15 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://13.57.32.153:8080/]
+Oct 24, 2022 7:33:15 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Oct 24, 2022 7:33:20 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver isPortVisible
+WARNING: connect timed out
+Oct 24, 2022 7:33:20 AM hudson.remoting.jnlp.Main$CuiListener error
+SEVERE: http://13.57.32.153:8080/ provided port:40111 is not reachable
+java.io.IOException: http://13.57.32.153:8080/ provided port:40111 is not reachable
+	at org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver.resolve(JnlpAgentEndpointResolver.java:311)
+	at hudson.remoting.Engine.innerRun(Engine.java:744)
+	at hudson.remoting.Engine.run(Engine.java:543)
+
