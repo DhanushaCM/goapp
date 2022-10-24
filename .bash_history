@@ -31,3 +31,15 @@ java -jar agent.jar -jnlpUrl http://13.57.32.153:8080/manage/computer/staging/je
 sudo java -jar agent.jar -jnlpUrl http://13.57.32.153:8080/manage/computer/staging/jenkins-agent.jnlp -secret 
 suso su
 sudo su
+curl -sO http://13.57.32.153:8080/jnlpJars/agent.jar
+java -jar agent.jar -jnlpUrl http://13.57.32.153:8080/manage/computer/staging/jenkins-agent.jnlp -secret bb040c0670a225e4879b9394fc5ad6818b15dae30bb2aa8b74e40c03bde3270b -workDir "/home/ec2-user/jenkins"
+whereis git
+java -jar agent.jar -jnlpUrl http://13.57.32.153:8080/manage/computer/staging/jenkins-agent.jnlp -secret bb040c0670a225e4879b9394fc5ad6818b15dae30bb2aa8b74e40c03bde3270b -workDir "/home/ec2-user/jenkins"
+git init
+git status
+git commit -m "all"
+git commit -m "all" master
+git add .
+git status
+git commit -m "all"
+git status
